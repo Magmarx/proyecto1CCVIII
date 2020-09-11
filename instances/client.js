@@ -1,11 +1,11 @@
-var udp = require('dgram');
+var tcp = require('net');
 var globalFuncs = require('./globals.js');
 
-var host = '127.0.0.1';
-var port = '5384';
-var srcPort = "KH";
+var host = '10.8.0.18';
+var port = '9999';
+var srcPort = "MP";
 
-function firstPacket(socket, address, port) {
+function firstPacket(socket) {
 
     var clientGlobals = new globalFuncs();
 
@@ -27,14 +27,58 @@ function firstPacket(socket, address, port) {
     var seg = clientGlobals.calcChecksum(tcpHeader, "");
 
     //sending msg
-    socket.send(seg, port, address, function(error) {
-        if (error) {
-            console.log('Data Send Error :( ');
-        } else {
-            console.log('Data sent !!!');
-        }
-    });
+    console.log(seg);
+    socket.write(seg);
 
+}
+
+function secondPacket(socket, msg) {
+
+    var clientGlobals = new globalFuncs();
+
+    var sentHeader = processMsg(msg.toString());
+
+    //  First we will send the SYN
+    var seq = 50;
+    var ack = 50;
+
+    console.log('50 seq and ack');
+
+    /**
+     * @param seqNumber
+     * @param ackNumber
+     * @param srcPort
+     * @param dstPort
+     * @param flags
+     * 
+     * Here we send
+     */
+    var tcpHeader = clientGlobals.createTcpHeader(seq, ack, srcPort, clientGlobals.hex2a(sentHeader.dstPort), "010");
+
+    console.log(tcpHeader);
+
+    var seg = clientGlobals.calcChecksum(tcpHeader, "");
+
+    //sending msg
+    socket.write(seg);
+}
+
+
+function processMsg(msg) {
+
+    var partMsg = {
+        srcPort: msg.slice(0, 4),
+        dstPort: msg.slice(4, 8),
+        seqNumber: msg.slice(8, 16),
+        ackNumber: msg.slice(16, 24),
+        offset: msg.slice(24, 25),
+        flags: msg.slice(25, 28),
+        window: msg.slice(28, 32),
+        checksum: msg.slice(32, 36),
+        urgentPointer: msg.slice(36, 40)
+    };
+
+    return partMsg;
 }
 
 function run() {
@@ -43,43 +87,31 @@ function run() {
 
     // creating a client socket
 
-    var client = udp.createSocket('udp4');
-    var clientGlobals = new globalFuncs();
+    var client = new tcp.Socket();
 
-    firstPacket(client, host, port);
+    console.log(host);
+    console.log(port);
+    client.connect(port, host, function() {
+        console.log('Connected');
 
-    // globals.createTcpHeader(0, 0, "KH", "--", []);
+        firstPacket(client, host, port);
 
-
-
-    //buffer msg
-    // var data = Buffer.from('siddheshrane');
-
-    client.on('message', function(msg, info) {
-        console.log('Data received from server : ' + msg.toString());
-        console.log('Received %d bytes from %s:%d\n', msg.length, info.address, info.port);
     });
 
-    // //sending msg
-    // client.send(data, port, host, function(error) {
-    //     if (error) {
-    //         client.close();
-    //     } else {
-    //         console.log('Data sent !!!');
-    //     }
-    // });
+    client.on('close', function() {
+        console.log('Connection closed');
+    });
 
-    // var data1 = Buffer.from('hello');
-    // var data2 = Buffer.from('world');
+    client.on('data', function(msg, info) {
+        console.log('Data received from server : ' + msg.toString());
+        console.log('Received %d bytes from %s:%d\n', msg.length);
 
-    // //sending multiple msg
-    // client.send([data1, data2], port, host, function(error) {
-    //     if (error) {
-    //         client.close();
-    //     } else {
-    //         console.log('Data sent !!!');
-    //     }
-    // });
+        var parsedHeader = processMsg(msg.toString());
+
+        if (parseInt(parsedHeader.seqNumber) == 1) {
+            secondPacket(client, msg.toString());
+        }
+    });
 
 }
 

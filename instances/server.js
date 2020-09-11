@@ -1,15 +1,16 @@
-var udp = require('dgram');
+var tcp = require('net');
 var globalFuncs = require('./globals.js');
 
+var host = '127.0.0.1';
 var port = '5384';
 var RTT = 10000;
 var srcPort = "DT";
 
-function fistPacket(socket, address, port, msg) {
+function fistPacket(socket, msg) {
 
     var serverGlobals = new globalFuncs();
 
-    var sentHeader = processMsg(msg);
+    var sentHeader = processMsg(msg.toString());
 
     //  First we will send the SYN
     var seq = 1;
@@ -24,19 +25,39 @@ function fistPacket(socket, address, port, msg) {
      * 
      * Here we send
      */
-    var tcpHeader = serverGlobals.createTcpHeader(seq, ack, srcPort, serverGlobals.hex2a(sentHeader.srcPort), "012");
+    var tcpHeader = serverGlobals.createTcpHeader(seq, ack, serverGlobals.hex2a(sentHeader.srcPort), srcPort, "012");
 
     var seg = serverGlobals.calcChecksum(tcpHeader, "");
 
     //sending msg
-    socket.send(seg, port, address, function(error) {
-        if (error) {
-            client.close();
-        } else {
-            console.log('Data sent !!!');
-        }
+    socket.write(seg);
+}
 
-    });
+function secondPacket(socket, msg) {
+
+    var serverGlobals = new globalFuncs();
+
+    var sentHeader = processMsg(msg.toString());
+
+    //  First we will send the SYN
+    var seq = 50;
+    var ack = 50;
+
+    /**
+     * @param seqNumber
+     * @param ackNumber
+     * @param srcPort
+     * @param dstPort
+     * @param flags
+     * 
+     * Here we send
+     */
+    var tcpHeader = serverGlobals.createTcpHeader(seq, ack, serverGlobals.hex2a(sentHeader.srcPort), srcPort, "012");
+
+    var seg = serverGlobals.calcChecksum(tcpHeader, "");
+
+    //sending msg
+    socket.write(seg);
 }
 
 function processMsg(msg) {
@@ -58,27 +79,7 @@ function processMsg(msg) {
 
 function run() {
     // creating a udp server
-    var server = udp.createSocket('udp4');
-
-    // emits when any error occurs
-    server.on('error', function(error) {
-        console.log('Error: ' + error);
-        server.close();
-    });
-
-    // emits on new datagram msg
-    server.on('message', function(msg, info) {
-        console.log('Data received from client : ' + msg.toString());
-        console.log('Received %d bytes from %s:%d\n', msg.length, info.address, info.port);
-
-        var parsedHeader = processMsg(msg);
-
-        if (parsedHeader.seqNumber == "1") {
-            fistPacket(server, info.address, info.port, msg.toString());
-        }
-
-
-    });
+    var server = tcp.createServer();
 
     //emits when socket is ready and listening for datagram msgs
     server.on('listening', function() {
@@ -91,16 +92,34 @@ function run() {
         console.log('Server is IP4/IP6 : ' + family);
     });
 
-    //emits after the socket is closed using socket.close();
-    server.on('close', function() {
-        console.log('Socket is closed !');
+    server.on('connection', function(socket) {
+        console.log('A new client has connected');
+
+        socket.on('data', function(msg) {
+            console.log(`Data received from client: ${msg.toString()}.`);
+
+            var parsedHeader = processMsg(msg.toString());
+
+            console.log(parsedHeader);
+
+            if (parseInt(parsedHeader.seqNumber) == 1) {
+                fistPacket(socket, msg.toString());
+            } else if (parseInt(parsedHeader.seqNumber) == 50) {
+                secondPacket(socket, msg.toString());
+            }
+        });
+
+        socket.on('end', function() {
+            console.log('Closing connection with the client');
+        });
+
+        socket.on('error', function(err) {
+            console.log(`Error: ${err}`);
+        });
     });
 
-    server.bind(port);
+    server.listen(port, host);
 
-    setTimeout(function() {
-        server.close();
-    }, RTT);
 }
 
 run();

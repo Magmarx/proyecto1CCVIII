@@ -76,12 +76,7 @@ module.exports = function() {
 
         var checksum = IPv4(hexArr).toString(16);
 
-        console.log('pre replace');
-        console.log(header);
-
-        console.log('post replce');
         header = header.slice(0, -8) + pad_with_zeroes_right(checksum, 8);
-        console.log(header);
 
         return header.toUpperCase() + body.toUpperCase();
     };
