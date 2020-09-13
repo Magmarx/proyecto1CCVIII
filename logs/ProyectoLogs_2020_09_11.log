@@ -1,0 +1,274 @@
+11:02:40 PM | Info | '####### Client Init ....' | 
+11:02:40 PM | Info | 'Connected' | 
+11:02:40 PM | Info | 'Data received from server : 4D504D5000000031000000325012000114E90000' | 
+11:02:40 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:02:40 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:10:21 PM | Info | '####### Server Init ....' | 
+11:10:21 PM | Info | 'Server is listening at port6787' | 
+11:10:21 PM | Info | 'Server ip :127.0.0.1' | 
+11:10:21 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:10:24 PM | Info | '####### Client Init ....' | 
+11:10:24 PM | Info | '#### A new client has connected' | 
+11:10:24 PM | Info | 'Connected' | 
+11:10:24 PM | Info | 'Data received from client: 4D502D2D000000310000003050020001351E0000.' | 
+11:10:24 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000031','ackNumber':'00000030','offset':'5','flags':'002','window':'0001','checksum':'351E','urgentPointer':'0000'}) | 
+11:10:24 PM | Info | 'Data received from server : 4D504D5000000031000000325012000114E90000' | 
+11:10:24 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:10:24 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:10:24 PM | Info | 'Data received from client: 4D504D5000000032000000325010000114EA0000.' | 
+11:10:24 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000032','offset':'5','flags':'010','window':'0001','checksum':'14EA','urgentPointer':'0000'}) | 
+11:29:19 PM | Info | 'Connection closed' | 
+11:29:25 PM | Info | '####### Server Init ....' | 
+11:29:25 PM | Info | 'Server is listening at port6787' | 
+11:29:25 PM | Info | 'Server ip :127.0.0.1' | 
+11:29:25 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:29:27 PM | Info | '####### Client Init ....' | 
+11:29:27 PM | Info | '#### A new client has connected' | 
+11:29:27 PM | Info | 'Connected' | 
+11:29:27 PM | Info | 'Data received from client: 4D502D2D00003331000000305002000121E00000.' | 
+11:29:27 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00003331','ackNumber':'00000030','offset':'5','flags':'002','window':'0001','checksum':'21E0','urgentPointer':'0000'}) | 
+11:34:28 PM | Info | 'Closing connection with the client' | 
+11:34:35 PM | Info | '####### Server Init ....' | 
+11:34:35 PM | Info | 'Server ip :127.0.0.1' | 
+11:34:35 PM | Info | 'Server is listening at port6787' | 
+11:34:35 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:34:37 PM | Info | '####### Client Init ....' | 
+11:34:37 PM | Info | '#### A new client has connected' | 
+11:34:37 PM | Info | 'Connected' | 
+11:34:37 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:34:37 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:35:06 PM | Info | 'Connection closed' | 
+11:35:11 PM | Info | '####### Server Init ....' | 
+11:35:11 PM | Info | 'Server ip :127.0.0.1' | 
+11:35:11 PM | Info | 'Server is listening at port6787' | 
+11:35:11 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:35:17 PM | Info | '####### Client Init ....' | 
+11:35:17 PM | Info | '#### A new client has connected' | 
+11:35:17 PM | Info | 'Connected' | 
+11:35:17 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:35:17 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:35:17 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:35:17 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:35:17 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:35:17 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:35:17 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:39:20 PM | Info | 'Closing connection with the client' | 
+11:39:26 PM | Info | '####### Server Init ....' | 
+11:39:26 PM | Info | 'Server is listening at port6787' | 
+11:39:26 PM | Info | 'Server ip :127.0.0.1' | 
+11:39:26 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:39:29 PM | Info | '####### Client Init ....' | 
+11:39:29 PM | Info | '#### A new client has connected' | 
+11:39:29 PM | Info | 'Connected' | 
+11:39:29 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:39:29 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:39:29 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:39:29 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:39:29 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:39:29 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:39:29 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:39:29 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00003530','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:39:29 PM | Info | 'Data received from client: 4D504D50000035300000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:39:45 PM | Info | 'Closing connection with the client' | 
+11:39:47 PM | Info | '#### A new client has connected' | 
+11:39:47 PM | Info | '####### Client Init ....' | 
+11:39:47 PM | Info | 'Connected' | 
+11:39:47 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:39:47 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:39:47 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:39:47 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:39:47 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:39:47 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:39:47 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:39:47 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:39:47 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:44:29 PM | Info | 'Connection closed' | 
+11:44:35 PM | Info | '####### Server Init ....' | 
+11:44:35 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:44:35 PM | Info | 'Server ip :127.0.0.1' | 
+11:44:35 PM | Info | 'Server is listening at port6787' | 
+11:44:36 PM | Info | '####### Client Init ....' | 
+11:44:36 PM | Info | '#### A new client has connected' | 
+11:44:36 PM | Info | 'Connected' | 
+11:44:36 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:44:36 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:44:36 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:44:36 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:44:36 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:44:36 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:44:36 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:44:36 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:44:36 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:44:36 PM | Info | 'Data received from server : 4D504D5000000032004E614E50180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:44:36 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:45:03 PM | Info | 'Connection closed' | 
+11:45:06 PM | Info | '####### Server Init ....' | 
+11:45:06 PM | Info | 'Server is listening at port6787' | 
+11:45:06 PM | Info | 'Server ip :127.0.0.1' | 
+11:45:06 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:45:08 PM | Info | '####### Client Init ....' | 
+11:45:08 PM | Info | '#### A new client has connected' | 
+11:45:08 PM | Info | 'Connected' | 
+11:45:08 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:45:08 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:45:08 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:45:08 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:45:08 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:45:08 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:45:08 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:45:08 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:45:08 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:45:08 PM | Info | 'Data received from server : 4D504D5000000032004E614E50180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:45:08 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:45:46 PM | Info | 'Closing connection with the client' | 
+11:45:52 PM | Info | '####### Server Init ....' | 
+11:45:52 PM | Info | 'Server is listening at port6787' | 
+11:45:52 PM | Info | 'Server ip :127.0.0.1' | 
+11:45:52 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:45:53 PM | Info | '####### Client Init ....' | 
+11:45:53 PM | Info | '#### A new client has connected' | 
+11:45:53 PM | Info | 'Connected' | 
+11:45:53 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:45:53 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:45:53 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:45:53 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:45:53 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:45:53 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:45:53 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:45:53 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:45:53 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:45:53 PM | Info | 'Data received from server : 4D504D5000000032004E614E50180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:45:53 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:46:14 PM | Info | 'Connection closed' | 
+11:46:20 PM | Info | '####### Server Init ....' | 
+11:46:20 PM | Info | 'Server is listening at port6787' | 
+11:46:20 PM | Info | 'Server ip :127.0.0.1' | 
+11:46:20 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:46:22 PM | Info | '####### Client Init ....' | 
+11:46:22 PM | Info | '#### A new client has connected' | 
+11:46:22 PM | Info | 'Connected' | 
+11:46:22 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:46:22 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:46:22 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:46:22 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:46:22 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:46:22 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:46:22 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:46:22 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:46:22 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:46:22 PM | Info | 'Data received from server : 4D504D5000000032004E614E50180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:46:22 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:47:17 PM | Info | 'Connection closed' | 
+11:47:21 PM | Info | '####### Server Init ....' | 
+11:47:21 PM | Info | 'Server is listening at port6787' | 
+11:47:21 PM | Info | 'Server ip :127.0.0.1' | 
+11:47:21 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:47:22 PM | Info | '####### Client Init ....' | 
+11:47:22 PM | Info | '#### A new client has connected' | 
+11:47:22 PM | Info | 'Connected' | 
+11:47:22 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:47:22 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:47:22 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:47:22 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:47:22 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:47:22 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:47:22 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:47:22 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:47:22 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:47:22 PM | Info | 'Data received from server : 4D504D5000000032004E614E50180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:47:22 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:47:43 PM | Info | 'Connection closed' | 
+11:47:48 PM | Info | '####### Server Init ....' | 
+11:47:48 PM | Info | 'Server is listening at port6787' | 
+11:47:48 PM | Info | 'Server ip :127.0.0.1' | 
+11:47:48 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:47:49 PM | Info | '####### Client Init ....' | 
+11:47:49 PM | Info | '#### A new client has connected' | 
+11:47:49 PM | Info | 'Connected' | 
+11:47:49 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:47:49 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:47:49 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:47:49 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:47:49 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:47:49 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:47:49 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:47:49 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:47:49 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:47:49 PM | Info | 'Data received from server : 4D504D5000000032004E614E50180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:47:49 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:48:12 PM | Info | 'Connection closed' | 
+11:48:17 PM | Info | '####### Server Init ....' | 
+11:48:17 PM | Info | 'Server is listening at port6787' | 
+11:48:17 PM | Info | 'Server ip :127.0.0.1' | 
+11:48:17 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:48:19 PM | Info | '####### Client Init ....' | 
+11:48:19 PM | Info | '#### A new client has connected' | 
+11:48:19 PM | Info | 'Connected' | 
+11:48:19 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:48:19 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:48:19 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:48:19 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:48:19 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:48:19 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:48:19 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:48:19 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:48:19 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:48:19 PM | Info | 'Data received from server : 4D504D5000000032004E614E50180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:48:19 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:50:32 PM | Info | 'Connection closed' | 
+11:50:34 PM | Info | '####### Server Init ....' | 
+11:50:34 PM | Info | 'Server is listening at port6787' | 
+11:50:34 PM | Info | 'Server ip :127.0.0.1' | 
+11:50:34 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:50:36 PM | Info | '####### Client Init ....' | 
+11:50:36 PM | Info | '#### A new client has connected' | 
+11:50:36 PM | Info | 'Connected' | 
+11:50:36 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:50:36 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:50:36 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:50:36 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:50:36 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:50:36 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:50:36 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:50:36 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:50:36 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:50:36 PM | Info | 'Data received from server : 4D504D50000000320000323150180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:50:36 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:51:03 PM | Info | 'Connection closed' | 
+11:51:09 PM | Info | '####### Server Init ....' | 
+11:51:09 PM | Info | 'Server ip :127.0.0.1' | 
+11:51:09 PM | Info | 'Server is listening at port6787' | 
+11:51:09 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:51:11 PM | Info | '####### Client Init ....' | 
+11:51:11 PM | Info | '#### A new client has connected' | 
+11:51:11 PM | Info | 'Connected' | 
+11:51:11 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:51:11 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:51:11 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:51:11 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:51:11 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:51:11 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:51:11 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:51:11 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:51:11 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:51:11 PM | Info | 'Data received from server : 4D504D50000000320000323150180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:51:11 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 
+11:51:43 PM | Info | 'Connection closed' | 
+11:51:47 PM | Info | '####### Server Init ....' | 
+11:51:47 PM | Info | 'Server is IP4/IP6 : IPv4' | 
+11:51:47 PM | Info | 'Server ip :127.0.0.1' | 
+11:51:47 PM | Info | 'Server is listening at port6787' | 
+11:51:49 PM | Info | '#### A new client has connected' | 
+11:51:48 PM | Info | '####### Client Init ....' | 
+11:51:49 PM | Info | 'Connected' | 
+11:51:49 PM | Info | 'Data received from client: 4D502D2D000000010000000050020001357E0000.' | 
+11:51:49 PM | Info | ({'srcPort':'4D50','dstPort':'2D2D','seqNumber':'00000001','ackNumber':'00000000','offset':'5','flags':'002','window':'0001','checksum':'357E','urgentPointer':'0000'}) | 
+11:51:49 PM | Info | 'Data received from server : 4D504D5000000001000000025012000115490000' | 
+11:51:49 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 40 | 
+11:51:49 PM | Info | 'The First packet is correct, sending the second packet ...' | 
+11:51:49 PM | Info | 'Data received from client: 4D504D50000000020000000250100001154A0000.' | 
+11:51:49 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000002','ackNumber':'00000002','offset':'5','flags':'010','window':'0001','checksum':'154A','urgentPointer':'0000'}) | 
+11:51:49 PM | Info | ({'srcPort':'4D50','dstPort':'4D50','seqNumber':'00000032','ackNumber':'00000030','offset':'5','flags':'008','window':'0001','checksum':'FFFF','urgentPointer':'0000'}) | 
+11:51:49 PM | Info | 'Data received from client: 4D504D50000000320000003050080001FFFF0000766964656F45636F6E6F6D69612E6D7034.' | 
+11:51:49 PM | Info | 'Data received from server : 4D504D50000000320000003350180001FFFF0000766964656F45636F6E6F6D69612E6D7034' | 
+11:51:49 PM | Info | 'Received %d bytes from %s:%d\n' | Service: 74 | 

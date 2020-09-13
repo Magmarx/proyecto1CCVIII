@@ -1,11 +1,15 @@
+var fs = require('fs');
+var path = require('path');
+
 module.exports = function() {
-    this.createTcpHeader = function(seqNumber, ackNumber, srcPort, dstPort, flags) {
+    this.createTcpHeader = function(seqNumber, ackNumber, srcPort, dstPort, flags, encode) {
 
         let header = "";
 
         /**
          * @addLog
          * @description here we will add the source port to the response header
+         * @example "MP" -> 4D50
          */
         header += strToHex(srcPort);
 
@@ -19,14 +23,24 @@ module.exports = function() {
          * @addLog
          * @description here we will add the sequence number to the response header
          */
-        var seqStr = seqNumber.toString(16);
+        var seqStr;
+        if (encode) {
+            seqStr = strToHex(seqNumber);
+        } else {
+            seqStr = seqNumber;
+        }
         header += pad_with_zeroes(seqStr, 8);
 
         /**
          * @addLog
          * @description here we will add the ack to the response header
          */
-        var ackStr = ackNumber.toString(16);
+        var ackStr;
+        if (encode) {
+            ackStr = strToHex(ackNumber);
+        } else {
+            ackStr = ackNumber;
+        }
         header += pad_with_zeroes(ackStr, 8);
 
         /**
@@ -66,6 +80,9 @@ module.exports = function() {
         return header;
 
     };
+    this.createFileNameBody = function(name) {
+        return strToHex(name);
+    };
     this.calcChecksum = function(header, body) {
         var data = header + body,
             hexArr = [];
@@ -86,6 +103,18 @@ module.exports = function() {
         for (var i = 0; i < hex.length; i += 2)
             str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
         return str;
+    };
+    this.getFileName = function(filePath) {
+        if (filePath.indexOf('/') > -1) {
+            return filePath.split('/').pop();
+        } else {
+            return filePath;
+        }
+    };
+    this.createFile = function(filePath, fileBuffer) {
+        fs.writeFile(filePath, fileBuffer, (err) => {
+            if (err) console.log("Error while saving file: " + err);
+        });
     };
 };
 
